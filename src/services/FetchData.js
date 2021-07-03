@@ -4,19 +4,22 @@ import { SET_STATUS_DATA, SET_FETCHED_DATA
 } from '../contexts/GlobalStateReducer';
 
 
-const url_astrobase = "https://uilennest.net/my_astrobase/asteroids/"
+
 
 export default function FetchData () {
     // use global state
     const [ my_state , my_dispatch] = useGlobalReducer()
 
     useEffect(() => {
-            fetchAsteroids(url_astrobase)
+            fetchAsteroids()
         }, []
     );
 
 
-    const fetchAsteroids = (url) => {
+    const fetchAsteroids = () => {
+
+        const url = "https://uilennest.net/my_astrobase/asteroids-all/"
+
         if (my_state.status_data !== 'fetching')  {
 
             // apply all the filters in my_state to the url_observations
