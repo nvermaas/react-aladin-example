@@ -28,11 +28,11 @@ const Aladin = (props) => {
             //displayLabel: true,
             onClick: 'showTable'});
 
-        // loop through all the observations and add them to the appropriate layer based on quality
+        // loop through all the objects and add them to the appropriate layer based on quality
         if (data) {
             data.forEach(function (object) {
 
-                // draw a clickable icon for each observation
+                // draw a clickable icon for each object
                 addToCatalog(my_catalog, object)
             })
 
