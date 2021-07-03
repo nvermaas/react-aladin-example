@@ -9,7 +9,7 @@ import {
 
 import NavigationBar from './NavigationBar';
 import WelcomePage from '../pages/WelcomePage';
-import AladinPage from '../pages/aladin/AladinPage';
+import AsteroidsPage from '../pages/asteroids/AsteroidsPage';
 import FetchData from '../services/FetchData';
 
 export default function Main() {
@@ -25,8 +25,8 @@ export default function Main() {
                     <Route exact path="/">
                         <WelcomePage />
                     </Route>
-                    <Route exact path="/aladin">
-                        <AladinPage />
+                    <Route exact path="/asteroids">
+                        <AsteroidsPage />
                     </Route>
 
                 </Switch>

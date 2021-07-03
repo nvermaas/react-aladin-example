@@ -5,7 +5,7 @@ import { useGlobalReducer } from '../../contexts/GlobalContext';
 
 import Aladin from './Aladin'
 
-export default function AladinPage(props) {
+export default function AsteroidsPage(props) {
 
     const [ my_state, my_dispatch] = useGlobalReducer()
 
