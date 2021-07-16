@@ -1,9 +1,6 @@
 import React from 'react';
 
-import { useGlobalReducer } from '../../contexts/GlobalContext'
-
 const Aladin = (props) => {
-    const [ my_state , my_dispatch] = useGlobalReducer()
 
     React.useEffect(() => {
         let aladin = window.A.aladin('#aladin-lite-div', { survey: 'P/DSS2/color', fov:60 })
